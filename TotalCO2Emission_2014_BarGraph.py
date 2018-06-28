@@ -10,7 +10,7 @@ df1 = data.parse('Data', skiprows=3)
 df1 = df1.drop(["Country Code", "Indicator Name", "Indicator Code"], axis=1)
 df1 = df1.set_index("Country Name")
 #print (df1.loc['India']['2014'])
-df1.loc[["Qatar", "Kuwait","Bahrain","United Arab Emirates","Saudi Arabia","United States","Australia","Canada","Russian Federation","Singapore","Netherlands", "Japan","Norway","Germany", "China", "United Kingdom" ,"France","India"], "2014"].plot(kind='bar')
+df1.loc[["Qatar", "Kuwait","Bahrain","United Arab Emirates","Saudi Arabia","United States","Australia","Canada","Russian Federation","Singapore","Netherlands", "Japan","Norway","Germany", "China", "United Kingdom" ,"France","European Union","India"], "2014"].plot(kind='bar')
 
 #Fromatting axis ticks
 plt.ticklabel_format(useOffset=False, style='plain', axis='y')
